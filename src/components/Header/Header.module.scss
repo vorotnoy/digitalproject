@@ -1,8 +1,14 @@
-.wrapper{
-    display: flex;
-}
-.image{
-    margin-right: 330px;
+@import "../../assets/styles/utils/mixins";
 
-    cursor: pointer;
+.wrapper {
+  @include container;
+  
+  display: flex;
+  align-items: center;
+}
+.image {
+  margin-right: 330px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  cursor: pointer;
 }
