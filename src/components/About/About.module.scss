@@ -1,0 +1,51 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  height: 435px;
+
+  padding: 30px 70px 30px 100px;
+  margin-bottom: 150px;
+
+  background-color: #fbfbfb;
+}
+
+.image_block {
+  position: absolute;
+  left: 100px;
+  top:30px;
+
+  width: 270px;
+
+  display: flex;
+  justify-content: center;
+  height: 435px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.about_block__title {
+  font-family: TT Hoves;
+  font-size: 64px;
+  font-weight: 300;
+  line-height: 64px;
+  letter-spacing: 0em;
+
+  margin-bottom: 20px;
+
+  color: #bdbdbd;
+}
+.about_block__desc {
+  width: 400px;
+
+  font-family: TT Hoves;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: 0em;
+
+  margin-bottom: 20px;
+
+  color: #000000;
+}

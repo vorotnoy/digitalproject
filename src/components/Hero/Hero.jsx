@@ -1,7 +1,8 @@
 import s from "./Hero.module.scss";
 import img from "../../assets/img/hero.jpg";
-import svg from "../../assets/icons/sprite.svg";
 import clsx from "clsx";
+import { Button } from "../Button/Button";
+import svg from "../../assets/icons/sprite.svg";
 
 export const Hero = () => {
   return (
@@ -33,12 +34,8 @@ export const Hero = () => {
       </div>
       <div className={s.image_wrapper}>
         <img src={img} className={s.image} />
-        <div className={s.navigate_image}>
-          <p className={s.navigate_image__title}>ВЗГЛЯНУТЬ</p>
-          <svg width="24" height="24">
-            <use href={svg + "#icon-arrow"}></use>
-          </svg>
-        </div>
+        <div className={s.button_wrapper}><Button title='ВЗГЛЯНУТЬ'/></div>
+        
       </div>
     </section>
   );

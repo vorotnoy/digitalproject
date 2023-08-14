@@ -1,0 +1,23 @@
+.button {  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    width: 227px;
+    height: 71px;
+  
+    background-color: #ffffff;
+
+    border: none;
+  
+    cursor: pointer;
+  }
+  .button_title {
+    font-family: TT Hoves;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0.2em;
+  
+    margin-right: 12px;
+  }
