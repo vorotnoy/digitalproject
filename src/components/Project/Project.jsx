@@ -1,19 +1,8 @@
 import s from "./Project.module.scss";
 import svg from "../../assets/icons/sprite.svg";
 import { Button } from "../Button/Button";
+import {ImgWrap} from '../Image/Image'
 
-const ImgWrap = ({ img, alt }) => {
-  const image = "src/assets/img";
-  return (
-    <picture>
-      <source
-        srcSet={`${image}/${img}.jpg 1x,
-            ${image}/${img}@2x.jpg 2x`}
-      />
-      <img src={image + "/${img}.jpg"} alt={alt} />
-    </picture>
-  );
-};
 
 const Backdrop = ({ title }) => {
   return (

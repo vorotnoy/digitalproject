@@ -3,6 +3,7 @@ import { Hero } from '../Hero/Hero'
 import { About } from '../About/About'
 import { Task } from '../Task/Task'
 import { Project } from '../Project/Project'
+import { ContactUs } from '../ContactUs/ContactsUs'
 
 export const Main = ()=>{
     return(
@@ -11,6 +12,7 @@ export const Main = ()=>{
             <About/>
             <Task/>
             <Project/>
+            <ContactUs/>
         </div>
     )
 }
