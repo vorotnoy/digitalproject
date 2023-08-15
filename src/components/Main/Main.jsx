@@ -2,6 +2,7 @@ import s from './Main.module.scss'
 import { Hero } from '../Hero/Hero'
 import { About } from '../About/About'
 import { Task } from '../Task/Task'
+import { Project } from '../Project/Project'
 
 export const Main = ()=>{
     return(
@@ -9,6 +10,7 @@ export const Main = ()=>{
             <Hero/>
             <About/>
             <Task/>
+            <Project/>
         </div>
     )
 }
