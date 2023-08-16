@@ -1,8 +1,7 @@
 import s from "./Project.module.scss";
 import svg from "../../assets/icons/sprite.svg";
 import { Button } from "../Button/Button";
-import {ImgWrap} from '../Image/Image'
-
+import { ImgWrap } from "../Image/Image";
 
 const Backdrop = ({ title }) => {
   return (
@@ -46,12 +45,14 @@ export const Project = () => {
           <ImgWrap img="project4" alt="РАЗВЛЕКАТЕЛЬНЫЙ центр" />
         </li>
       </ul>
-      <Button
-        title="ВСЕ ПРОЕКТЫ"
-        bgrclr="#333333"
-        color="#FFFFFF"
-        fill="#FFFFFF"
-      />
+      <div className={s.button_wrapper}>
+        <Button
+          title="ВСЕ ПРОЕКТЫ"
+          bgrclr="#333333"
+          color="#FFFFFF"
+          fill="#FFFFFF"
+        />
+      </div>
     </section>
   );
 };

@@ -1,3 +1,5 @@
+@import "../../assets/styles/utils/vars";
+
 .wrapper {
   display: flex;
   justify-content: space-between;
@@ -26,21 +28,26 @@
   width: 53px;
   height: 53px;
 
-  border: 1px solid #f2f2f2;
-  background-color: #f9f9f9;
+  border: 1px solid $bordercolor;
+  background-color: $backgroundcolor4;
 
   cursor: pointer;
+
+  &:hover,
+  &:focus{
+    border: 1px solid $backgroundcolor3;
+  }
 }
 .navigate_item__rotation {
   transform: rotate(180deg);
 
   margin-right: 23px;
-  background-color: #ffffff;
+  background-color: $backgroundcolor;
 }
 .navigate_line {
   width: 271px;
   height: 1px;
-  background-color: #f2f2f2;
+  background-color: $bordercolor;
 }
 .navigate_info {
   display: flex;
@@ -49,13 +56,11 @@
   margin-top: 90px;
 }
 .navigate_info__item {
-  font-family: TT Hoves;
   font-size: 24px;
-  font-weight: 400;
   line-height: 24px;
   letter-spacing: 0em;
-  
-  color: #BDBDBD;
+
+  color: $titlecolor;
 }
 .navigate_line.rotation {
   width: 43.82px;
@@ -64,8 +69,25 @@
 .image_wrapper {
   position: relative;
 }
-.button_wrapper{
+.button_wrapper {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+.info_block__title {
+  font-size: 64px;
+  font-weight: 300;
+  line-height: 64px;
+  letter-spacing: 0em;
+
+  color: $titlecolor;
+}
+.info_block__span{
+font-size: 64px;
+font-weight: 700;
+line-height: 64px;
+letter-spacing: 0em;
+
+color: $maincolor;
+
 }

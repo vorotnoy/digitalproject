@@ -1,3 +1,5 @@
+@import '../../assets/styles/utils/vars';
+
 .button {  
     display: flex;
     align-items: center;
@@ -6,20 +8,22 @@
     width: 227px;
     height: 71px;
   
-    background-color: #ffffff;
+    background-color: $backgroundcolor;
 
     border: none;
   
     cursor: pointer;
   }
   .button_title {
-    font-family: TT Hoves;
     font-size: 12px;
-    font-weight: 400;
     line-height: 12px;
     letter-spacing: 0.2em;
   
     margin-right: 12px;
 
-    color:#333333;
+    color:$maincolor;
+  }
+
+  .button:hover .button_title {
+    margin-right: 20px;
   }

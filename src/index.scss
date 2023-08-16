@@ -1,3 +1,57 @@
 @import './assets/styles/utils/reset-style';
 @import './assets/styles/utils/vars';
 @import './assets/styles/utils/mixins';
+
+@font-face {
+    font-family: 'GothicA1';
+    src: local('GothicA1'),
+      url('./assets/fonts/GothicA1-Regular.ttf') format('truetype');
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'SFProDisplay';
+    src: local('SFProDisplay'),
+      url('./assets/fonts/SFProDisplay-Black.ttf') format('truetype');
+    font-weight: 900;
+  }
+  @font-face {
+    font-family: 'TTHoves';
+    src: local('TTHoves'),
+      url('./assets/fonts/TTHoves-Light.ttf') format('truetype');
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: 'TTHoves';
+    src: local('TTHoves'),
+      url('./assets/fonts/TTHoves-Regular.ttf') format('truetype');
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'TTHoves';
+    src: local('TTHoves'),
+      url('./assets/fonts/TTHoves-Medium.ttf') format('truetype');
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: 'TTHoves';
+    src: local('TTHoves'),
+      url('./assets/fonts/TTHoves-Bold.ttf') format('truetype');
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: 'OpenSans';
+    src: local('OpenSans'),
+      url('./assets/fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+  }
+
+  body {
+    background-color:$backgroundcolor;
+    margin: 0;
+    font-family: 'TTHoves', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    color: $maincolor;
+  }

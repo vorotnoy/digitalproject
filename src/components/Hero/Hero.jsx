@@ -8,8 +8,8 @@ export const Hero = () => {
   return (
     <section className={s.wrapper}>
       <div className={s.info_block}>
-        <h1>
-          PROJECT <span>HOME</span>
+        <h1 className={s.info_block__title}>
+          PROJECT <span className={s.info_block__span}>HOME</span>
         </h1>
         <div className={s.navigate_block}>
           <div className={s.navigate_items}>

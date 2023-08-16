@@ -1,19 +1,19 @@
+@import '../../assets/styles/utils/vars';
+
 .form {
   width: 391px;
 }
-.form_label{
-    display: flex;
+.form_label {
+  display: flex;
 }
 .from_checkbox__text {
   display: block;
   width: 331px;
 
-  font-family: TT Hoves;
   font-size: 14px;
-  font-weight: 400;
   line-height: 17px;
   letter-spacing: 0.03em;
-  color: #333333;
+  color: $maincolor;
 
   padding-left: 10px;
 }
@@ -24,7 +24,7 @@
   padding: 14px 21px;
   margin-bottom: 10px;
 
-  background-color: #f3f3f3;
+  background-color: $backgroundcolor2;
 }
 .form_textarea {
   width: 391px;
@@ -33,31 +33,34 @@
   padding: 14px 21px;
   margin-bottom: 22px;
   resize: none;
-  background-color: #f3f3f3;
+  background-color: $backgroundcolor2;
 }
 .form_checkbox {
   position: absolute;
   z-index: -1;
-  // opacity: 0;
+  opacity: 0;
 }
-
+.form_checked__svg {
+  display: none;
+  position: absolute;
+  top: 7px;
+  left: 3px;
+}
 .form_label__checkbox {
+  position: relative;
   display: inline-flex;
   align-items: center;
   margin-bottom: 21px;
-  background :url("src/assets/icons/sprite.svg#icon-facebook");
-  &::before{
+  &::before {
     content: "";
     display: block;
     width: 24px;
     height: 24px;
-    border: solid 1px black;
+    border: solid 1px $maincolor;
     border-radius: 5px;
-    background :url("src/assets/icons/sprite.svg#icon-check") no-repeat;
-    background-size:24px 24px ;
+    background-size: 24px 24px;
   }
 }
-.form_label__checkbox::before + .form_checkbox:checked{
-  background-image:url('src/assets/icons/sprite.svg#icon-check');
-  background-size:24px 24px ;
+.form_checkbox:checked ~ .form_checked__svg {
+  display: block;
 }

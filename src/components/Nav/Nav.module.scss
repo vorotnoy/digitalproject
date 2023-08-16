@@ -1,3 +1,5 @@
+@import '../../assets/styles/utils/vars';
+
 .nav_block{
     display: flex;
     & > li:not(:last-child){
@@ -18,7 +20,7 @@
 
             margin-top: 3.89px;
 
-            background-color: #333333;
+            background-color: $maincolor;
         }
         &::before{
             content: "";
@@ -28,7 +30,7 @@
 
             margin-bottom: 3.89px;
 
-            background-color: #333333;
+            background-color: $maincolor;
         }
     }
 }

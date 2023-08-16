@@ -24,7 +24,6 @@ export const Footer = () => {
               <svg
                 width="11"
                 height="16"
-                fill="#FFFFFF"
                 className={s.footer_svg}
               >
                 <use href={svg + "#icon-location"}></use>
@@ -37,7 +36,6 @@ export const Footer = () => {
               <svg
                 width="11"
                 height="16"
-                fill="#FFFFFF"
                 className={s.footer_svg}
               >
                 <use href={svg + "#icon-phone"}></use>
@@ -45,12 +43,7 @@ export const Footer = () => {
               <p className={s.footer_contact__text}>+38 (000) 000 00 00</p>
             </li>
             <li className={s.footer_contact__item}>
-              <svg
-                width="11"
-                height="16"
-                fill="#FFFFFF"
-                className={s.footer_svg}
-              >
+              <svg width="11" height="16" className={s.footer_svg}>
                 <use href={svg + "#icon-email"}></use>
               </svg>
               <p className={s.footer_contact__text}>mail@gmail.com</p>
@@ -63,28 +56,15 @@ export const Footer = () => {
             <svg width="15" height="19" className={s.footer_svg}>
               <use href={svg + "#icon-facebook"}></use>
             </svg>
-            <svg
-                width="22"
-                height="17"
-                className={s.footer_svg}
-              >
-                <use href={svg + "#icon-twitter"}></use>
-              </svg>
-              <svg
-                width="20"
-                height="20"
-                className={s.footer_svg}
-              >
-                <use href={svg + "#icon-linkedin"}></use>
-              </svg>
-              <svg
-                width="14"
-                height="19"
-                fill="#FFFFFF"
-                className={s.footer_svg}
-              >
-                <use href={svg + "#icon-pininterest"}></use>
-              </svg>
+            <svg width="22" height="17" className={s.footer_svg}>
+              <use href={svg + "#icon-twitter"}></use>
+            </svg>
+            <svg width="20" height="20" className={s.footer_svg}>
+              <use href={svg + "#icon-linkedin"}></use>
+            </svg>
+            <svg width="14" height="19" fill="#FFFFFF" className={s.footer_svg}>
+              <use href={svg + "#icon-pininterest"}></use>
+            </svg>
           </div>
         </div>
       </div>

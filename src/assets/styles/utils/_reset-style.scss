@@ -1,5 +1,5 @@
 @import 'node_modules/modern-normalize/modern-normalize.css';
-
+@import './vars';
 html {
   box-sizing: border-box;
 }
@@ -37,5 +37,5 @@ a {
 
 body {
   max-width: 1440px;
-  background-color: #FFFFFF;
+  background-color: $backgroundcolor;
 }

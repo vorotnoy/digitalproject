@@ -1,14 +1,15 @@
+@import '../../assets/styles/utils/vars';
+
 .wrapper {
   margin-bottom: 120px;
 }
 .contactus_title {
-  font-family: TT Hoves;
   font-size: 64px;
   font-weight: 300;
   line-height: 64px;
   letter-spacing: 0em;
 
-  color: #bdbdbd;
+  color: $titlecolor;
 
   margin-bottom: 22px;
 }

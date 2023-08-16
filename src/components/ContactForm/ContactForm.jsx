@@ -1,6 +1,8 @@
 import s from "./ContactForm.module.scss";
 import { Button } from "../Button/Button";
 
+import svg from "../../assets/icons/sprite.svg";
+
 export const ContactForm = () => {
   return (
     <form className={s.form}>
@@ -50,6 +52,9 @@ export const ContactForm = () => {
       <label htmlFor="argue" className={s.form_label__checkbox}>
         <input type="checkbox" className={s.form_checkbox} id="argue" />
         <span className={s.from_checkbox__text}>Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</span>
+        <svg width="20" height="20" className={s.form_checked__svg}>
+          <use href={svg + "#icon-check"}></use>
+        </svg>
       </label>
       <Button
         title="ОТПРАВИТЬ"
