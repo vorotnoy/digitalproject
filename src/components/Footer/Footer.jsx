@@ -4,7 +4,7 @@ import svg from "../../assets/icons/sprite.svg";
 
 export const Footer = () => {
   return (
-    <section className={s.wrapper}>
+    <footer className={s.wrapper}>
       <div className={s.container}>
         <img src={img} className={s.footer_logo} />
         <div className={s.footer_nav}>
@@ -70,6 +70,6 @@ export const Footer = () => {
       </div>
       <div className={s.footer_line}></div>
       <p className={s.footer_pl}>© 2019 Digital Project. Все права защищены.</p>
-    </section>
+    </footer>
   );
 };

@@ -1,9 +1,31 @@
 @mixin container {
-  width: 100%;
+  max-width: 1440px;
   padding-left: 135px;
   padding-right: 135px;
 }
+@mixin mobileSmall {
+  @media screen and (max-width: 374px) {
+    @content;
+  }
+}
 
+@mixin mobile {
+  @media screen and (min-width: 375px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1280px) {
+    @content;
+  }
+}
 @mixin retina {
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
