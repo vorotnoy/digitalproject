@@ -1,5 +1,5 @@
 export const ImgWrap = ({ img, alt }) => {
-    const image = "src/assets/img";
+    const image = ("../../assets/img");
     return (
       <picture>
         <source
