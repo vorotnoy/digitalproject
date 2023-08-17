@@ -6,7 +6,7 @@ export const ImgWrap = ({ img, alt }) => {
           srcSet={`${image}/${img}.jpg 1x,
               ${image}/${img}@2x.jpg 2x`}
         />
-        <img src={image + "/${img}.jpg"} alt={alt} />
+        <img src={image + `/${img}.jpg`} alt={alt} />
       </picture>
     );
   };
