@@ -1,12 +1,19 @@
+
+function getImageUrl(name) {
+
+  const temp = new URL(`../../assets/img/${name}.jpg`, import.meta.url).href
+  console.log(temp)
+  return temp
+}
+
 export const ImgWrap = ({ img, alt }) => {
-    const image = ("../../assets/img");
     return (
       <picture>
         <source
-          srcSet={`${image}/${img}.jpg 1x,
-              ${image}/${img}@2x.jpg 2x`}
+          srcSet={`${getImageUrl(img)} 1x,
+          ${getImageUrl(img+'@2x')} 2x`}
         />
-        <img src={image + `/${img}.jpg`} alt={alt} />
+        <img src={getImageUrl(img)} alt={alt} />
       </picture>
     );
   };
